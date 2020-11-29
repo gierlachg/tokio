@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606655242379,
+  "lastUpdate": 1606655246115,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -189,6 +189,62 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1082,
             "range": "± 20",
+            "unit": "ns/iter"
+          }
+        ]
+      }
+    ],
+    "sync_rwlock": [
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c55d846f4b248b4a72335d6c57829fa6396ab9a5",
+          "message": "util: add rt to tokio-util full feature (#3194)",
+          "timestamp": "2020-11-29T09:48:31+01:00",
+          "tree_id": "5f27b29cd1018796f0713d6e87e4823920ba5084",
+          "url": "https://github.com/gierlachg/tokio/commit/c55d846f4b248b4a72335d6c57829fa6396ab9a5"
+        },
+        "date": 1606655245108,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 851,
+            "range": "± 105",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15036,
+            "range": "± 3761",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 898,
+            "range": "± 114",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13636,
+            "range": "± 3497",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 492,
+            "range": "± 72",
             "unit": "ns/iter"
           }
         ]
