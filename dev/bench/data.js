@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607094621651,
+  "lastUpdate": 1607094628390,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -431,6 +431,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 492,
             "range": "± 72",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "razican@protonmail.ch",
+            "name": "Iban Eguia",
+            "username": "Razican"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0dbba139848de6a8ee88350cc7fc48d0b05016c5",
+          "message": "deps: replace lazy_static with once_cell (#3187)",
+          "timestamp": "2020-12-04T10:23:13+01:00",
+          "tree_id": "73f3366b9c7a0c50d6dd146a2626368cf59b3178",
+          "url": "https://github.com/gierlachg/tokio/commit/0dbba139848de6a8ee88350cc7fc48d0b05016c5"
+        },
+        "date": 1607094627485,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1015,
+            "range": "± 115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15264,
+            "range": "± 5880",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1058,
+            "range": "± 13",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15849,
+            "range": "± 5358",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 601,
+            "range": "± 123",
             "unit": "ns/iter"
           }
         ]
