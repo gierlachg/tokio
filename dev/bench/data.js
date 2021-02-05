@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608298800541,
+  "lastUpdate": 1612535043473,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -143,6 +143,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18552911,
             "range": "± 2541209",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chenshuo17@huawei.com",
+            "name": "surechen",
+            "username": "surechen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e5a0a7df6eff94a1d6fee60fad5813f6bb42e64",
+          "message": "runtime: fix a spelling mistake (#3503)",
+          "timestamp": "2021-02-04T12:30:31+01:00",
+          "tree_id": "586a72831f167ab4244ba8647512380256e8cb0c",
+          "url": "https://github.com/gierlachg/tokio/commit/3e5a0a7df6eff94a1d6fee60fad5813f6bb42e64"
+        },
+        "date": 1612535042262,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 157112,
+            "range": "± 19500",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 606482,
+            "range": "± 38971",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4451336,
+            "range": "± 470230",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17079992,
+            "range": "± 2158574",
             "unit": "ns/iter"
           }
         ]
