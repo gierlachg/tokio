@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616261418342,
+  "lastUpdate": 1616443401897,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -287,6 +287,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 22436139,
             "range": "± 3635864",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "moritz.gunz@gmail.com",
+            "name": "Moritz Gunz",
+            "username": "NeoLegends"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "227b3e0d9c5276a5ce6a69405436418cd5515f39",
+          "message": "chore: avoid allocation if PollSemaphore is unused (#3634)",
+          "timestamp": "2021-03-22T17:02:30+01:00",
+          "tree_id": "3d19e1a59af025c38b91b4869439fc7d6db50d81",
+          "url": "https://github.com/gierlachg/tokio/commit/227b3e0d9c5276a5ce6a69405436418cd5515f39"
+        },
+        "date": 1616443401151,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 179113,
+            "range": "± 19629",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 689121,
+            "range": "± 89746",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5366856,
+            "range": "± 1281311",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20718201,
+            "range": "± 2769504",
             "unit": "ns/iter"
           }
         ]
