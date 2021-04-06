@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617702240281,
+  "lastUpdate": 1617702250597,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -383,6 +383,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21441958,
             "range": "± 4102226",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@lucaszanella.com",
+            "name": "Lucas Zanela",
+            "username": "lucaszanella"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0074b963b8ef02308e6367c8edd5c9d210c9038d",
+          "message": "doc: add features = \"full\" to readme (#3680)",
+          "timestamp": "2021-04-06T11:03:21+02:00",
+          "tree_id": "311075a61ef9a0e34f66c0e8b7b2004beab39280",
+          "url": "https://github.com/gierlachg/tokio/commit/0074b963b8ef02308e6367c8edd5c9d210c9038d"
+        },
+        "date": 1617702248985,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 182711,
+            "range": "± 30666",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 674768,
+            "range": "± 110869",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4432971,
+            "range": "± 1125783",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19117226,
+            "range": "± 3113048",
             "unit": "ns/iter"
           }
         ]
