@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617702250597,
+  "lastUpdate": 1617702255104,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -2027,6 +2027,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 584,
             "range": "± 81",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@lucaszanella.com",
+            "name": "Lucas Zanela",
+            "username": "lucaszanella"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0074b963b8ef02308e6367c8edd5c9d210c9038d",
+          "message": "doc: add features = \"full\" to readme (#3680)",
+          "timestamp": "2021-04-06T11:03:21+02:00",
+          "tree_id": "311075a61ef9a0e34f66c0e8b7b2004beab39280",
+          "url": "https://github.com/gierlachg/tokio/commit/0074b963b8ef02308e6367c8edd5c9d210c9038d"
+        },
+        "date": 1617702254210,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1147,
+            "range": "± 128",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 18213,
+            "range": "± 8487",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1125,
+            "range": "± 131",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 17613,
+            "range": "± 7391",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 616,
+            "range": "± 57",
             "unit": "ns/iter"
           }
         ]
