@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618307486501,
+  "lastUpdate": 1618307497875,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -431,6 +431,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19117226,
             "range": "± 3113048",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "liaoymxsdl@sina.com",
+            "name": "baoyachi. Aka Rust Hairy crabs",
+            "username": "baoyachi"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cab4a592ac1f122a988b8a81a235bb4eccb22db7",
+          "message": "chore: update version in README.md (#3698)",
+          "timestamp": "2021-04-13T16:17:14+09:00",
+          "tree_id": "2e4adee4ef6d23e792a4515550adfb47976f3dad",
+          "url": "https://github.com/gierlachg/tokio/commit/cab4a592ac1f122a988b8a81a235bb4eccb22db7"
+        },
+        "date": 1618307497178,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 191659,
+            "range": "± 33714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 682424,
+            "range": "± 115842",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4396117,
+            "range": "± 1037646",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18822470,
+            "range": "± 3005238",
             "unit": "ns/iter"
           }
         ]
