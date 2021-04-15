@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618487453398,
+  "lastUpdate": 1618487466885,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -479,6 +479,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18822470,
             "range": "± 3005238",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ecameron@bluecatnetworks.com",
+            "name": "Evan Cameron",
+            "username": "leshow"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9eeec039f200c42099e0471f2a216a679dce397e",
+          "message": "util: make UdpFramed take Borrow<UdpSocket> (#3451)",
+          "timestamp": "2021-04-14T20:16:23+02:00",
+          "tree_id": "04ee3c7c8df16f2004d778a5094b2064a95f6f04",
+          "url": "https://github.com/gierlachg/tokio/commit/9eeec039f200c42099e0471f2a216a679dce397e"
+        },
+        "date": 1618487463577,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 195394,
+            "range": "± 32760",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 717710,
+            "range": "± 190519",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4945856,
+            "range": "± 1215172",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21027345,
+            "range": "± 4332214",
             "unit": "ns/iter"
           }
         ]
