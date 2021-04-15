@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618487448035,
+  "lastUpdate": 1618487449775,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -2489,6 +2489,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 604,
             "range": "± 53",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ecameron@bluecatnetworks.com",
+            "name": "Evan Cameron",
+            "username": "leshow"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9eeec039f200c42099e0471f2a216a679dce397e",
+          "message": "util: make UdpFramed take Borrow<UdpSocket> (#3451)",
+          "timestamp": "2021-04-14T20:16:23+02:00",
+          "tree_id": "04ee3c7c8df16f2004d778a5094b2064a95f6f04",
+          "url": "https://github.com/gierlachg/tokio/commit/9eeec039f200c42099e0471f2a216a679dce397e"
+        },
+        "date": 1618487448953,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 977,
+            "range": "± 110",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14241,
+            "range": "± 4175",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 977,
+            "range": "± 131",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14904,
+            "range": "± 3753",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 590,
+            "range": "± 52",
             "unit": "ns/iter"
           }
         ]
