@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618556733773,
+  "lastUpdate": 1619547643598,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -575,6 +575,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19714638,
             "range": "± 4023739",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "st4ck0v3rfl0w@gmail.com",
+            "name": "kamulos",
+            "username": "kamulos"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ce9697f2a24d6c407a518a3a0b68c9db11e72ad3",
+          "message": "doc: fix missing backtick in select doc (#3732)",
+          "timestamp": "2021-04-27T22:23:03+09:00",
+          "tree_id": "e2b8685175f4a6ce58850ecc51d105ecd28002c5",
+          "url": "https://github.com/gierlachg/tokio/commit/ce9697f2a24d6c407a518a3a0b68c9db11e72ad3"
+        },
+        "date": 1619547642875,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 168918,
+            "range": "± 38432",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 632872,
+            "range": "± 295095",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4151406,
+            "range": "± 979375",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17610294,
+            "range": "± 2738827",
             "unit": "ns/iter"
           }
         ]
