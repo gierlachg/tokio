@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619547663428,
+  "lastUpdate": 1619547668938,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -2283,6 +2283,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 860,
             "range": "± 100",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "st4ck0v3rfl0w@gmail.com",
+            "name": "kamulos",
+            "username": "kamulos"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ce9697f2a24d6c407a518a3a0b68c9db11e72ad3",
+          "message": "doc: fix missing backtick in select doc (#3732)",
+          "timestamp": "2021-04-27T22:23:03+09:00",
+          "tree_id": "e2b8685175f4a6ce58850ecc51d105ecd28002c5",
+          "url": "https://github.com/gierlachg/tokio/commit/ce9697f2a24d6c407a518a3a0b68c9db11e72ad3"
+        },
+        "date": 1619547668206,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 17059,
+            "range": "± 4515",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1089,
+            "range": "± 238",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 613,
+            "range": "± 131",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 16610,
+            "range": "± 5590",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1066,
+            "range": "± 180",
             "unit": "ns/iter"
           }
         ]
