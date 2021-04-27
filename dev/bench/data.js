@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619547643598,
+  "lastUpdate": 1619547663428,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -2933,6 +2933,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 522,
             "range": "± 95",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "st4ck0v3rfl0w@gmail.com",
+            "name": "kamulos",
+            "username": "kamulos"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ce9697f2a24d6c407a518a3a0b68c9db11e72ad3",
+          "message": "doc: fix missing backtick in select doc (#3732)",
+          "timestamp": "2021-04-27T22:23:03+09:00",
+          "tree_id": "e2b8685175f4a6ce58850ecc51d105ecd28002c5",
+          "url": "https://github.com/gierlachg/tokio/commit/ce9697f2a24d6c407a518a3a0b68c9db11e72ad3"
+        },
+        "date": 1619547662339,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1037,
+            "range": "± 191",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14539,
+            "range": "± 4352",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1060,
+            "range": "± 277",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14307,
+            "range": "± 4585",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 584,
+            "range": "± 43",
             "unit": "ns/iter"
           }
         ]
