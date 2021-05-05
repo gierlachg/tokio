@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620212109947,
+  "lastUpdate": 1620212121943,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -2553,6 +2553,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1066,
             "range": "± 180",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "russell.r.cohen@gmail.com",
+            "name": "Russell Cohen",
+            "username": "rcoh"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ef39dfb22974e6f5f6203e279912d3eac68017d",
+          "message": "tokio-test: add assert_elapsed macro (#3728)",
+          "timestamp": "2021-05-05T12:09:28+02:00",
+          "tree_id": "ff96a5a7e3e1114749779e206237626e6b299faf",
+          "url": "https://github.com/gierlachg/tokio/commit/8ef39dfb22974e6f5f6203e279912d3eac68017d"
+        },
+        "date": 1620212121043,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 18618,
+            "range": "± 10427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1198,
+            "range": "± 310",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 691,
+            "range": "± 138",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 17108,
+            "range": "± 9427",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1124,
+            "range": "± 133",
             "unit": "ns/iter"
           }
         ]
