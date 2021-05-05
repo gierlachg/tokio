@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620212106652,
+  "lastUpdate": 1620212109947,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -3257,6 +3257,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 584,
             "range": "± 43",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "russell.r.cohen@gmail.com",
+            "name": "Russell Cohen",
+            "username": "rcoh"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ef39dfb22974e6f5f6203e279912d3eac68017d",
+          "message": "tokio-test: add assert_elapsed macro (#3728)",
+          "timestamp": "2021-05-05T12:09:28+02:00",
+          "tree_id": "ff96a5a7e3e1114749779e206237626e6b299faf",
+          "url": "https://github.com/gierlachg/tokio/commit/8ef39dfb22974e6f5f6203e279912d3eac68017d"
+        },
+        "date": 1620212104636,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1009,
+            "range": "± 103",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 16825,
+            "range": "± 6433",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1093,
+            "range": "± 154",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 17269,
+            "range": "± 9092",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 563,
+            "range": "± 89",
             "unit": "ns/iter"
           }
         ]
