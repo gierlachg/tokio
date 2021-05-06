@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620294995264,
+  "lastUpdate": 1620295002926,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -671,6 +671,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19376672,
             "range": "± 3430421",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "stefan@sydow.email",
+            "name": "Stefan Sydow",
+            "username": "stsydow"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "177522cd43a150d215e4c0b8c31fdfb2cf957ed8",
+          "message": "benchmark: add file reading benchmarks (#3013)",
+          "timestamp": "2021-05-05T21:49:00+02:00",
+          "tree_id": "67429676bd59148a109d4f58f224cb1a609b3ea5",
+          "url": "https://github.com/gierlachg/tokio/commit/177522cd43a150d215e4c0b8c31fdfb2cf957ed8"
+        },
+        "date": 1620295002190,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 205745,
+            "range": "± 59202",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 734954,
+            "range": "± 214246",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5361241,
+            "range": "± 1309433",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20913078,
+            "range": "± 2836360",
             "unit": "ns/iter"
           }
         ]
