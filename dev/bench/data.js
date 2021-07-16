@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620295024020,
+  "lastUpdate": 1626463314236,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -719,6 +719,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20913078,
             "range": "± 2836360",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aef2d64b0a519ff6726f8c139ee1d3e6b1959b0b",
+          "message": "task: remove mutex in JoinError (#3959)",
+          "timestamp": "2021-07-16T09:50:03+02:00",
+          "tree_id": "f259a37edce5df791fa490022b27a12bc720b309",
+          "url": "https://github.com/gierlachg/tokio/commit/aef2d64b0a519ff6726f8c139ee1d3e6b1959b0b"
+        },
+        "date": 1626463313561,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 186160,
+            "range": "± 4272",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 887578,
+            "range": "± 316834",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5157874,
+            "range": "± 1854690",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18900124,
+            "range": "± 3278220",
             "unit": "ns/iter"
           }
         ]
