@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1626463365314,
+  "lastUpdate": 1627991830808,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -767,6 +767,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18900124,
             "range": "± 3278220",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "link.ted@mailbox.org",
+            "name": "LinkTed",
+            "username": "LinkTed"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8198ef38814c45f9dc02fcbf826225b5cf32a6bb",
+          "message": "chore: fix clippy warnings (#4017)",
+          "timestamp": "2021-08-03T10:50:40+02:00",
+          "tree_id": "106465a6adc7459672ace3e1eb5face0d3fd7b6f",
+          "url": "https://github.com/gierlachg/tokio/commit/8198ef38814c45f9dc02fcbf826225b5cf32a6bb"
+        },
+        "date": 1627991830148,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 187791,
+            "range": "± 4316",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 918750,
+            "range": "± 151989",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5554308,
+            "range": "± 1247231",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17770158,
+            "range": "± 4718776",
             "unit": "ns/iter"
           }
         ]
