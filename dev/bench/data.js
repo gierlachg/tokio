@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630010314549,
+  "lastUpdate": 1630010317383,
   "repoUrl": "https://github.com/gierlachg/tokio",
   "entries": {
     "rt_multi_threaded": [
@@ -2293,6 +2293,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 598423,
             "range": "± 3152",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eliza@buoyant.io",
+            "name": "Eliza Weisman",
+            "username": "hawkw"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e2e38b7cdf4c9f51a0034469c8553d995af1383",
+          "message": "sync: use `WakeList` in `Notify` and `batch_semaphore` (#4071)\n\n## Motivation\r\n\r\nPR #4055 added a new `WakeList` type, to manage a potentially\r\nuninitialized array when waking batches of wakers. This has the\r\nadvantage of not initializing a bunch of empty `Option`s when only a\r\nsmall number of tasks are being woken, potentially improving performance\r\nin these cases.\r\n\r\nCurrently, `WakeList` is used only in the IO driver. However,\r\n`tokio::sync` contains some code that's almost identical to the code in\r\nthe IO driver that was replaced with `WakeList`, so we can apply the\r\nsame optimizations there.\r\n\r\n## Solution\r\n\r\nThis branch changes `tokio::sync::Notify` and\r\n`tokio::sync::batch_semaphore::Semaphore` to use `WakeList` when waking\r\nbatches of wakers. This was a pretty straightforward drop-in\r\nreplacement.\r\n\r\nSigned-off-by: Eliza Weisman <eliza@buoyant.io>",
+          "timestamp": "2021-08-26T11:33:22-07:00",
+          "tree_id": "d74ef96d6251eefbbe6d2eff7f92b3dc494e2900",
+          "url": "https://github.com/gierlachg/tokio/commit/1e2e38b7cdf4c9f51a0034469c8553d995af1383"
+        },
+        "date": 1630010316668,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6897747,
+            "range": "± 2698293",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5810993,
+            "range": "± 1257959",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6528206,
+            "range": "± 2694784",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 234,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 233,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 233,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 25565,
+            "range": "± 150",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 774,
+            "range": "± 30",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 888187,
+            "range": "± 4588",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 675784,
+            "range": "± 4798",
             "unit": "ns/iter"
           }
         ]
